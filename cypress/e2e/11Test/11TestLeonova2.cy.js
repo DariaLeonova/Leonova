@@ -1,3 +1,7 @@
+
+/*
+Еще раз локаторы - CGV7a3 wc-border-color-box wc-corner-radius-box wc-border-width это плохой локатор, ищи дргуие более лаконичные
+*/
 describe('Comment submission form', () => {
     it('check ', () => {
     
