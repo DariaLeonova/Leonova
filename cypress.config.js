@@ -1,11 +1,14 @@
 const { defineConfig } = require("cypress");
 
-module.exports = defineConfig({
-  viewportHeight: 1080,
-  viewportWidth: 1920,
+const {addMatchImageSnapshotPlugin} = require('cypress-image-snapshot/plugin');
+module.exports = defineConfig ({
+
   e2e: {
+
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+    addMatchImageSnapshotPlugin(on, config);
     },
+    chromeWebSecurity: false
   },
 });
+

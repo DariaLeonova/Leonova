@@ -1,12 +1,11 @@
 
-describe('Authorization facebook google appleid', () => {
+describe('Authorization', () => {
     it('check ', () => {
     
-      cy.visit('https://friends.multiplex.ua/login').wait(10000);
+      cy. viewport(1600,1024);
+      cy.visit('http://the-internet.herokuapp.com/iframe').wait(3000);
 
-      cy.contains('a[class="social-link"] div[class="wrapper-icon-open-id"]').click().wait(10000);
-      cy.contains('#google-signin-button').click().wait(10000);
-      cy.contains('[class="apple-signin-btn wrapper-icon-open-id"]').click().wait(10000);
+  
      
 
   

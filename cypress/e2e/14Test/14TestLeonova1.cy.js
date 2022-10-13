@@ -7,9 +7,9 @@ describe('testIframe', () => {
       
         cy.get('#frame1').then(function($iFrame){
           const iframe = $iFrame.contents().find('body');
-          cy.wait(5000);
-          cy.wrap(iframe).find('#sampleHeading').then((tt)=>{
-            expect(tt.text()).to.be.equal('This is a sample page');
+          cy.wait(7000);
+          cy.wrap(iframe).find('#sampleHeading').then((el)=>{
+            expect(el.text()).contains('This is a sample page');
         })
       })
     });
